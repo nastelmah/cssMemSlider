@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MemSlider</title>
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <article class="inner" id="slider">
+        <input checked type="radio" name="slider" id="switch1" />
+        <input type="radio" name="slider" id="switch2" />
+        <input type="radio" name="slider" id="switch3" />
+        <input type="radio" name="slider" id="switch4" />
+        <div id="slides">
+          <div id="overflow">
+            <div class="image">
+              <article><img class="img" src="../assets/1_img.jpg" /></article>
+              <article><img class="img" src="../assets/2_img.jpg" /></article>
+              <article><img class="img" src="../assets/3_img.jpg" /></article>
+              <article><img class="img" src="../assets/4_img.jpg" /></article>
+            </div>
+            <div class="info">
+              <div class="slider-description">
+                <p class="text1">
+                  В целом, времена пандемии были прикольными, <br />
+                  согласитесь
+                </p>
+                <p class="text2">
+                  Что в свободное время ты любишь делать больше всего? <br />
+                  У меня нет свободного времени, я постоянно работаю <br />
+                  Ничего себе, наверное у тебя много денег? <br />
+                  *плачет*
+                </p>
+                <p class="text3">
+                  Выбор, который я делаю каждый день <br />
+                  Немного пожить для себя до двух часов ночи<br />
+                  и страдать весь следующий день <br />
+                  Уснуть вместе с ребёнком и все равно не выспаться
+                </p>
+                <p class="text4">
+                  Когда ты узнаёшь, что твой образ жизни на самом деле <br />
+                  называется "карантин"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="active">
+            <label class="label1" for="switch1"></label>
+            <label class="label2" for="switch2"></label>
+            <label class="label3" for="switch3"></label>
+            <label class="label4" for="switch4"></label>
+          </div>
+      </article>
+    </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
